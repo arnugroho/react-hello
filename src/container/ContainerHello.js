@@ -8,7 +8,15 @@ export default class ContainerHello extends React.Component {
     }
 }
 
-class AnotherContainerHello extends React.Component {
+export class AnotherContainerHello extends React.Component {
+    render() {
+        return (
+            <h1>Another Hello Class Container</h1>
+        )
+    }
+}
+
+class NotExportContainerHello extends React.Component {
     render() {
         return (
             <h1>Another Hello Class Container</h1>
