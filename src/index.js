@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import ContainerHello from './container/ContainerHello'
+import './container/ContainerHello'
+import ContainerHello from "./container/ContainerHello";
 
 
 class HelloWorld extends React.Component{
@@ -16,7 +17,7 @@ class HelloWorld extends React.Component{
 
 ReactDOM.render(
   <React.StrictMode>
-    <HelloWorld />
+    <ContainerHello />
   </React.StrictMode>,
   document.getElementById('root')
 );
