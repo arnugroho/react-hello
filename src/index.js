@@ -3,10 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ContainerHello from './container/ContainerHello'
+
+
+class HelloWorld extends React.Component{
+    render() {
+        return(
+            <h2>Hello here</h2>
+        )
+    }
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <HelloWorld />
   </React.StrictMode>,
   document.getElementById('root')
 );
