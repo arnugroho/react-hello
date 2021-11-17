@@ -3,9 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import './container/ContainerHello'
+// import './container/ContainerHello'
 // import ContainerHello from "./container/ContainerHello";
 import ContainerHello, {AnotherContainerHello} from "./container/ContainerHello";
+import "./component/ComponentHello";
+import Greeting, {GreetingArrow} from "./component/ComponentHello";
 
 
 class HelloWorld extends React.Component{
@@ -18,7 +20,7 @@ class HelloWorld extends React.Component{
 
 ReactDOM.render(
   <React.StrictMode>
-    <ContainerHello />
+    <Greeting />
   </React.StrictMode>,
   document.getElementById('root')
 );
