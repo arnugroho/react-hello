@@ -1,13 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 // import './container/ContainerHello'
 // import ContainerHello from "./container/ContainerHello";
-import ContainerHello, {AnotherContainerHello} from "./container/ContainerHello";
+//import ContainerHello, {AnotherContainerHello} from "./container/ContainerHello";
 import "./component/ComponentHello";
-import Greeting, {GreetingArrow} from "./component/ComponentHello";
+//import Greeting, {GreetingArrow} from "./component/ComponentHello";
 
 
 class HelloWorld extends React.Component{
@@ -18,11 +18,11 @@ class HelloWorld extends React.Component{
     }
 }
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Greeting />
-  </React.StrictMode>,
-  document.getElementById('root')
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
